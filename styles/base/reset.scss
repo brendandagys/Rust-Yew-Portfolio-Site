@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  -ms-text-size-adjust: 100%; // 1
+  -ms-overflow-style: scrollbar; // 2
+  font-size: $root-font-size; // 3
+}
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+a {
+  -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+}
+
+img {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse; // Prevent double borders
+}
+
+label {
+  // Allow labels to use `margin` for spacing.
+  display: inline-block;
+}
+
+textarea {
+  // Textareas should really only resize vertically so they don't break their (horizontal) containers.
+  resize: vertical;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+}
+

@@ -1,0 +1,103 @@
+body {
+  @include site-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.45rem;
+  line-height: $line-height-base;
+  // color: $color-gray-dd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: $color-link-blue;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-blue-dd;
+  }
+}
+
+// Font weight
+.weight-regular {
+  font-weight: $font-weight-regular;
+}
+.weight-medium {
+  font-weight: $font-weight-medium;
+}
+.semibold {
+  font-weight: $font-weight-semibold;
+}
+
+// Decoration
+.bold {
+  font-weight: $font-weight-bold;
+}
+.underline {
+  text-decoration: underline;
+}
+.no-select {
+  @include text-unselectable();
+}
+
+// Font size
+.font-6xs {
+  font-size: $font-size-6xs;
+}
+.font-5xs {
+  font-size: $font-size-5xs;
+}
+.font-4xs {
+  font-size: $font-size-4xs;
+}
+.font-3xs {
+  font-size: $font-size-3xs;
+}
+.font-2xs {
+  font-size: $font-size-2xs;
+}
+.font-xs {
+  font-size: $font-size-xs;
+}
+.font-sm {
+  font-size: $font-size-sm;
+}
+.font-base {
+  font-size: $font-size-base;
+}
+.font-lg {
+  font-size: $font-size-lg;
+}
+.font-xl {
+  font-size: $font-size-xl;
+}
+.font-2xl {
+  font-size: $font-size-2xl;
+}
+.font-3xl {
+  font-size: $font-size-3xl;
+}
+.font-4xl {
+  font-size: $font-size-4xl;
+}
+.font-5xl {
+  font-size: $font-size-5xl;
+}
+.font-6xl {
+  font-size: $font-size-6xl;
+}
+.font-7xl {
+  font-size: $font-size-7xl;
+}
+.font-8xl {
+  font-size: $font-size-8xl;
+}
+.font-9xl {
+  font-size: $font-size-9xl;
+}
+.font-10xl {
+  font-size: $font-size-10xl;
+}

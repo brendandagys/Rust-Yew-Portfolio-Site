@@ -1,3 +1,18 @@
-body {
-  background: blue;
+// Abstracts
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/ContactForm';
+@import 'components/ImageTiles';
+@import 'components/Footer';
+@import 'components/Landing';
+@import 'components/WhoIAm';
+
+.app {
+  background: linear-gradient(to left bottom, #d2b3f4, #b192ea, #8875e2, rgba(81,90,218,1), #000 98%);  
 }
