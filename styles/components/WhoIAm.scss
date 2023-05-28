@@ -7,9 +7,9 @@
     max-width: 850px;
   }
   
-  &__technologies { font-weight: 700; }
+  &__technologies, &__certifications { font-weight: 700; }
 
-  p:not(.who-i-am__technologies) {
+  p:not(.who-i-am__technologies, .who-i-am__certifications) {
     line-height: 1.75;
     font-weight: 300;
     margin-top: 1.25rem;

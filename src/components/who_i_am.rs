@@ -4,7 +4,7 @@ use crate::components::IconGallery;
 
 #[function_component(WhoIAm)]
 pub fn who_i_am() -> Html {
-    let icons = vec![
+    let technology_icons = vec![
         "javascript-icon.svg".to_string(),
         "typescript-icon.svg".to_string(),
         "react-icon.svg".to_string(),
@@ -28,6 +28,15 @@ pub fn who_i_am() -> Html {
         "jquery-icon.svg".to_string(),
     ];
 
+    let certification_icons = vec![
+      "sap.png".to_string(),
+      "dop.png".to_string(),
+      "scs.png".to_string(),
+      "soa.png".to_string(),
+      "saa.png".to_string(),
+      "dva.png".to_string(),
+      "ccp.png".to_string(),
+    ];
     
     html! {
       <div class="who-i-am container-fluid justify-content-center m-0 pb-4">
@@ -42,8 +51,10 @@ pub fn who_i_am() -> Html {
         </div>
 
         <p class="who-i-am__technologies mt-5 mb-4 text-center">{"A FEW OF MY FAVORITE TECHNOLOGIES..."}</p>
-        
-        <IconGallery icons={icons}/>
+        <IconGallery icons={technology_icons}/>
+
+        <p class="who-i-am__certifications mt-5 mb-4 text-center">{"MY CERTIFICATIONS:"}</p>
+        <IconGallery icons={certification_icons} size={140} />
 
       </div>
     }
