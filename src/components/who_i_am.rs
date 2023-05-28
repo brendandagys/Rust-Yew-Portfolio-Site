@@ -4,6 +4,31 @@ use crate::components::IconGallery;
 
 #[function_component(WhoIAm)]
 pub fn who_i_am() -> Html {
+    let icons = vec![
+        "javascript-icon.svg".to_string(),
+        "typescript-icon.svg".to_string(),
+        "react-icon.svg".to_string(),
+        "redux-icon.svg".to_string(),
+        "nextjs-icon.svg".to_string(),
+        "python-icon.svg".to_string(),
+        "django-icon.svg".to_string(),
+        "cplusplus-icon.svg".to_string(),
+        "node-js-icon.svg".to_string(),
+        "docker-icon.svg".to_string(),
+        "graphql-icon.svg".to_string(),
+        "postgresql-icon.svg".to_string(),
+        "sql-icon.svg".to_string(),
+        "git-icon.svg".to_string(),
+        "redis-icon.svg".to_string(),
+        "material-ui-icon.svg".to_string(),
+        "tailwindcss-icon.svg".to_string(),
+        "bootstrap5-icon.png".to_string(),
+        "html5-icon.svg".to_string(),
+        "css-icon.svg".to_string(),
+        "jquery-icon.svg".to_string(),
+    ];
+
+    
     html! {
       <div class="who-i-am container-fluid justify-content-center m-0 pb-4">
 
@@ -18,7 +43,7 @@ pub fn who_i_am() -> Html {
 
         <p class="who-i-am__technologies mt-5 mb-4 text-center">{"A FEW OF MY FAVORITE TECHNOLOGIES..."}</p>
         
-        <IconGallery />
+        <IconGallery icons={icons}/>
 
       </div>
     }
