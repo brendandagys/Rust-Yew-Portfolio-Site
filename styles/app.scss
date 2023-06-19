@@ -7,9 +7,12 @@
 @import 'base/reset';
 @import 'base/typography';
 
+@import 'components/Accordion';
 @import 'components/ContactForm';
-@import 'components/ImageTiles';
 @import 'components/Footer';
+@import 'components/ImageTiles';
+@import 'components/Landing';
+@import 'components/Projects';
 @import 'components/WhoIAm';
 
 .app {

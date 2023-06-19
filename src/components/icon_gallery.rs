@@ -21,7 +21,7 @@ pub fn icon_gallery(IconGalleryProps { icons, size }: &IconGalleryProps) -> Html
     });
 
     html!(
-        <div class="d-flex flex-wrap justify-content-center">
+        <div class="d-flex flex-wrap justify-content-center px-4">
           { for icons_html }
         </div>
     )

@@ -1,7 +1,7 @@
 use yew::prelude::*;
 
 mod components;
-use crate::components::{Landing, WhoIAm, ContactForm, Footer};
+use crate::components::{Accordion, ContactForm, Footer, Landing, Projects, WhoIAm};
 
 #[function_component(App)]
 fn app() -> Html {
@@ -9,6 +9,8 @@ fn app() -> Html {
         <div class="app">
           <Landing />
           <WhoIAm />
+          <div style="position: relative; bottom: 70px;"><Accordion /></div>
+          <Projects />
           <ContactForm />
           <Footer />
         </div>

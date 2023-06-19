@@ -1,0 +1,46 @@
+.accordion {
+  color: $color-white;
+  margin-top: spacing(5);
+  margin-bottom: spacing(5);
+  max-width: 1000px;
+
+  &__title {
+    background: #3e3e3e; 
+    cursor: pointer;
+    font-size: 2rem;
+    padding: spacing(4) spacing(2);
+  }
+
+
+  &__title:not(:last-child) {
+    border-bottom: 0.5px solid darkgray;
+  }
+
+  &__chevron {
+    color: $color-black;
+    display: inline-block;
+    margin-left: spacing(2);
+    margin-right: spacing(4);
+    transition: all .2s ease-in;
+
+    &--open {
+      transform: rotate(90deg);
+      color: white;
+    }
+  }
+
+  &__content {
+    background: #4d4d4d;
+    height: 0;
+    overflow: hidden;
+    
+    p {
+      margin-bottom: 12px;
+      text-indent: 12px;
+    }
+
+    &--open {
+      height: auto;
+    }
+  }
+}
